@@ -1,0 +1,95 @@
+feature,importance
+frequency,4570952.406037807
+offer_value,2442916.520152092
+clicks_free_service,1958907.8217101097
+clicks_discount,1769981.668648243
+freq_x_offer_Free Service,1536389.4420728683
+frequency_bin,1459737.4543600082
+freq_x_offer_Credit,1357603.5389733315
+freq_x_offer_Bundle,1353145.106095314
+freq_x_offer_Referral,1066879.1783275604
+freq_x_offer_Points,1038768.0348300934
+rfm_score,756676.9193735123
+clicks_credit,748791.2839269638
+clicks_bundle,579511.8275785446
+monetary_x_offer_Credit,574409.957657814
+monetary_x_offer_Free Service,565277.8622550964
+recency_days,545166.6313114166
+rfm_x_offer_Free Service,528027.7823829651
+clicks_referral,512710.5988664627
+clicks_points,411016.59027194977
+monetary_x_offer_Points,331764.1230521202
+total_offers_received,321515.9587984085
+rfm_x_offer_Credit,319128.6416311264
+monetary_x_offer_Referral,301407.8265619278
+freq_x_offer_Discount,235791.72820568085
+monetary_x_offer_Bundle,204608.87520122528
+recency_x_offer_Referral,147283.17391204834
+monetary_x_offer_Discount,128851.02894496918
+rfm_x_offer_Bundle,121469.65803432465
+is_frequent,105369.06997680664
+rfm_x_offer_Discount,101321.05103874207
+isfreq_x_offer_Points,87464.93481445312
+recency_bin,77130.20784187317
+rfm_x_offer_Referral,62031.991260528564
+rfm_x_offer_Points,61230.872285842896
+isrecent_x_offer_Discount,54565.382323265076
+recency_x_offer_Points,47485.94189786911
+recency_x_offer_Free Service,46315.3557138443
+monetary_avg,28647.853677272797
+recency_x_offer_Credit,26458.964570999146
+unique_service_count,25084.5531539917
+isrecent_x_offer_Referral,24177.607318878174
+customer_tenure_days,23536.503420352936
+monetary_total,21025.90665245056
+isbudget_x_offer_Discount,20039.038138389587
+recency_x_offer_Discount,17944.34314441681
+recency_x_offer_Bundle,17816.938118457794
+monetary_min,16802.4781126976
+is_lapsed,12894.056473731995
+monetary_std,12130.594655036926
+avg_days_between_purchases,11431.327266216278
+is_lapsed_one_time,9278.212014198303
+first_purchase_days,8098.694365501404
+monetary_max,6036.8403515815735
+is_recent,4516.389945983887
+is_very_recent,3996.8398942947388
+monetary_bin,3649.366361618042
+isrecent_x_offer_Credit,3565.37278175354
+pct_spent_repair,3294.572720527649
+cluster,3283.601966381073
+pct_spent_diagnostic,3100.394087791443
+pct_spent_maintenance,2936.166549682617
+islapsed_x_offer_Credit,2412.21639251709
+pct_spent_cosmetic,2117.444751262665
+isrecent_x_offer_Bundle,1700.9440565109253
+isrecent_x_offer_Points,1472.7399969100952
+is_vip,1123.7447986602783
+is_semi_lapsed,1049.9625396728516
+unique_location_count,1018.5740747451782
+is_recent_frequent,1017.3324899673462
+is_very_frequent,1014.8982982635498
+isrecent_x_offer_Free Service,600.4757966995239
+isfreq_x_offer_Bundle,553.299916267395
+unique_category_count,530.7151918411255
+isfreq_x_offer_Free Service,528.0801048278809
+isfreq_x_offer_Credit,428.77198791503906
+isfreq_x_offer_Referral,129.46150016784668
+islapsed_x_offer_Referral,120.18970203399658
+isbudget_x_offer_Referral,90.29469966888428
+islapsed_x_offer_Discount,86.45905017852783
+isbudget_x_offer_Points,82.36513996124268
+isbudget_x_offer_Bundle,78.67377948760986
+isbudget_x_offer_Credit,53.462599754333496
+is_diverse_customer,48.60249900817871
+islapsed_x_offer_Free Service,43.53019905090332
+is_low_spender,38.78269958496094
+is_active_high_value,33.42460060119629
+isbudget_x_offer_Free Service,32.49440097808838
+is_premium,28.19569969177246
+is_budget,17.15399932861328
+islapsed_x_offer_Bundle,0.0
+islapsed_x_offer_Points,0.0
+is_high_spender,0.0
+is_one_time_buyer,0.0
+isfreq_x_offer_Discount,0.0
