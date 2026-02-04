@@ -79,7 +79,7 @@ offer-recommendation-system/
 
 | Metric | Value |
 |--------|-------|
-| AUC-ROC | 0.938 |
+| AUC-ROC | 0.829 |
 | Clusters | 10 |
 
 ## Installation
