@@ -3,45 +3,6 @@
 A production-ready two-stage machine learning pipeline for personalized offer recommendations. The system combines unsupervised clustering for fast candidate retrieval with a supervised ranking model for accurate personalization.
 
 ## Architecture
-
-```mermaid
-flowchart TD
-    subgraph Input
-        A[Customer ID]
-    end
-    
-    subgraph Cache
-        B[Redis Cache<br/>Features]
-    end
-    
-    subgraph Stage1["Stage 1: Retrieval"]
-        C[KMeans Clustering<br/>10 clusters]
-    end
-    
-    subgraph Filtering
-        D[Candidate Offers<br/>Cluster-based]
-    end
-    
-    subgraph Stage2["Stage 2: Ranking"]
-        E[LightGBM Model<br/>AUC: 0.829]
-    end
-    
-    subgraph Output
-        F[Top-K Offers]
-        G[Response]
-    end
-    
-    A --> B --> C --> D --> E --> F --> G
-    
-    style A fill:#a5d8ff,stroke:#1e1e1e
-    style B fill:#ffc9c9,stroke:#1e1e1e
-    style C fill:#b2f2bb,stroke:#1e1e1e
-    style D fill:#ffec99,stroke:#1e1e1e
-    style E fill:#d0bfff,stroke:#1e1e1e
-    style F fill:#ffd8a8,stroke:#1e1e1e
-    style G fill:#a5d8ff,stroke:#1e1e1e
-```
-
 ### Two-Stage Pipeline
 
 **Stage 1 - Retrieval (KMeans Clustering)**
