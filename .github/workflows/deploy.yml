@@ -1,0 +1,41 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure Credentials for AWS
+        uses: aws-action/configue-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+          aws-region: us-east-1
+
+      - name: login to Amazon ECR
+        id: login-ecr
+        uses: aws-action/amazon-ecr-login@v2
+
+      - name: Build Docker image
+        run: |
+          docker build --platform linux/amd64 -t offer-recommendation-api .
+
+      - name: Tag and Push to ECR
+        env:
+          ECR_REGISTRY: 420660210456.dkr.ecr.us-east-1.amazonaws.com
+          IMAGE_NAME: offer-recommendation-api
+        run: |
+          docker tag $IMAGE_NAME: latest $ECR_REGISTRY/IMAGE_NAME:latest
+          docker push $ECR_REGISTRY/IMAGE_NAME:latest
+
+      - name: Deploy to App Runner
+        run: |
+          aws apprunner start-deployment \
+            --service-arn arn:aws:apprunner:us-east-1:420660210456:service/offer-recommendation-api/dabd23fc9f6747c6850c463541f3a2c7

@@ -1,0 +1,50 @@
+# Virtual environments
+rsenv/
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# Data files (exclude large files, keep demo data for serving)
+data/*
+!data/customer_features_demo.csv
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+mlruns/
+mlartifacts/
+
+# Airflow (separate deployment)
+airflow/
+
+# Documentation
+*.md
+*.pdf
+documentation.*
+
+# Local config
+.env
+.env.local
+.claude/
+
+# Pipelines (not needed for serving)
+pipelines/
