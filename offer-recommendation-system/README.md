@@ -39,7 +39,7 @@ To handle scale efficiently while maintaining high accuracy, the system splits t
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *   **Architecture:** Two-Stage Recommender (Retrieval & Ranking)
 *   **Machine Learning:** LightGBM, Scikit-learn (K-Means), Pandas, NumPy
@@ -58,7 +58,7 @@ To handle scale efficiently while maintaining high accuracy, the system splits t
 
 ---
 
-## 💻 Local Setup
+## Local Setup
 
 1.  **Clone the repository:**
     ```bash
