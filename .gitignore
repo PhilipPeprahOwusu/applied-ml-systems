@@ -69,3 +69,4 @@ airflow/*.pid
 
 # Generated docs
 *.pdf
+TODO_FAISS.md
