@@ -95,5 +95,5 @@ We are currently planning to upgrade the **Retrieval Stage** (Stage 1) to levera
 
 ---
 
-**Author:** [Philip Owusu]
+**Author:** Philip Owusu
 **License:** MIT
