@@ -31,5 +31,5 @@ joblib>=1.3.0
 jupyter>=1.0.0
 ipywidgets>=8.0.0
 
-# Workflow orchestration 
+# Workflow orchestration (optional)
 apache-airflow>=2.7.0

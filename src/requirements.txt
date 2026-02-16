@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-lightgbm
-pandas
-numpy
-joblib
-redis
-python-multipart
