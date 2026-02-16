@@ -13,7 +13,7 @@ A production-grade **Two-Stage Recommender System** designed to personalize serv
 
 ---
 
-## 🏗️ System Architecture: The Two-Stage Approach
+## System Architecture: The Two-Stage Approach
 
 To handle scale efficiently while maintaining high accuracy, the system splits the recommendation problem into two distinct stages:
 
@@ -29,7 +29,7 @@ To handle scale efficiently while maintaining high accuracy, the system splits t
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 *   **Real-Time Serving:** Deployed as a **FastAPI** microservice with **Redis** caching for feature lookup, achieving sub-100ms latency.
 *   **Automated MLOps:** Full data lifecycle orchestration (ETL -> Feature Engineering -> Training) using **Apache Airflow**.
@@ -50,7 +50,7 @@ To handle scale efficiently while maintaining high accuracy, the system splits t
 
 ---
 
-## 📊 Results
+## Results
 
 *   **Ranking Accuracy:** 0.83 AUC-ROC.
 *   **Business Impact:** Simulated 10x lift in offer conversion rate (from ~3% baseline to ~30%) by targeting high-propensity users.
@@ -85,7 +85,7 @@ To handle scale efficiently while maintaining high accuracy, the system splits t
 
 ---
 
-## 📈 Future Roadmap: FAISS Retrieval
+## Future Roadmap: FAISS Retrieval
 
 We are currently planning to upgrade the **Retrieval Stage** (Stage 1) to leverage **Vector Search**:
 
@@ -95,5 +95,5 @@ We are currently planning to upgrade the **Retrieval Stage** (Stage 1) to levera
 
 ---
 
-**Author:** [Your Name]
+**Author:** [Philip Owusu]
 **License:** MIT
