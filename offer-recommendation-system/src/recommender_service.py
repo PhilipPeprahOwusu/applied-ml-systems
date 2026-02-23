@@ -2,7 +2,10 @@ import lightgbm as lgb
 import pandas as pd
 import json
 import os
+import logging
 from .offers import OFFERS, OFFER_TYPES
+
+logger = logging.getLogger(__name__)
 
 class OfferRecommender:
     """
@@ -10,16 +13,32 @@ class OfferRecommender:
     """
 
     def __init__(self, model_path: str, feature_path: str, cluster_candidates_path: str = None):
-        self.model = lgb.Booster(model_file=model_path)
-        with open(feature_path, 'r') as f:
-            self.feature_cols = json.load(f)
+        try:
+            if not os.path.exists(model_path):
+                logger.error(f"Model file not found at {model_path}")
+                raise FileNotFoundError(f"Model file not found at {model_path}")
+            
+            self.model = lgb.Booster(model_file=model_path)
+            logger.info(f"Successfully loaded LightGBM model from {model_path}")
 
-        self.cluster_candidates = None
-        if cluster_candidates_path and os.path.exists(cluster_candidates_path):
-            with open(cluster_candidates_path, 'r') as f:
-                self.cluster_candidates = json.load(f)
+            if not os.path.exists(feature_path):
+                logger.error(f"Feature list file not found at {feature_path}")
+                raise FileNotFoundError(f"Feature list file not found at {feature_path}")
 
-        self.offers_by_id = {o['offer_id']: o for o in OFFERS}
+            with open(feature_path, 'r') as f:
+                self.feature_cols = json.load(f)
+            logger.info(f"Loaded {len(self.feature_cols)} feature columns")
+
+            self.cluster_candidates = None
+            if cluster_candidates_path and os.path.exists(cluster_candidates_path):
+                with open(cluster_candidates_path, 'r') as f:
+                    self.cluster_candidates = json.load(f)
+                logger.info("Loaded cluster-based candidate mappings")
+
+            self.offers_by_id = {o['offer_id']: o for o in OFFERS}
+        except Exception as e:
+            logger.error(f"Failed to initialize OfferRecommender: {e}")
+            raise
 
     def _get_candidates(self, customer_features: dict) -> list:
         cluster = customer_features.get('cluster')

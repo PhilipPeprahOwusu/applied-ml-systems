@@ -49,7 +49,10 @@ recommender = None
 def connect_cache():
     global cache, REDIS_CONNECTED
     try:
+        # App Runner/Valkey often use SSL
         use_ssl = REDIS_HOST.endswith('.cache.amazonaws.com')
+        logger.info(f"Connecting to Redis at {REDIS_HOST}:{REDIS_PORT} (SSL: {use_ssl})")
+        
         cache = redis.Redis(
             host=REDIS_HOST,
             port=REDIS_PORT,
@@ -57,13 +60,15 @@ def connect_cache():
             password=REDIS_PASSWORD,
             decode_responses=True,
             ssl=use_ssl,
-            socket_connect_timeout=5
+            socket_connect_timeout=2,  # Short timeout for startup
+            socket_timeout=2
         )
         cache.ping()
         REDIS_CONNECTED = True
+        logger.info("Successfully connected to Redis")
         return True
     except Exception as e:
-        logger.error(f"Redis connection failed: {e}")
+        logger.warning(f"Initial Redis connection failed (Service will start in degraded mode): {e}")
         cache = None
         REDIS_CONNECTED = False
         return False
