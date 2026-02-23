@@ -22,6 +22,7 @@ env/
 # Data files (too large for git)
 data/*.csv
 data/*.parquet
+!data/customer_features_demo.csv
 
 # Model files (too large for git)
 models/*.lgb
