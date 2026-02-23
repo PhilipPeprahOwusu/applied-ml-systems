@@ -12,15 +12,8 @@ __pycache__/
 .eggs/
 
 # Data files (exclude large files, keep demo data for serving)
-# data/*
-# !data/customer_features_demo.csv
-data/customer_data_clean.csv
-data/customers_raw.csv
-data/customer_features_clustered.csv
-data/customers_with_truth.csv
-data/customer_features.csv
-data/offer_interactions.csv
-data/transactions.csv
+data/*
+!data/customer_features_demo.csv
 
 # Jupyter
 .ipynb_checkpoints/
