@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build --platform linux/amd64 -t offer-recommendation-api .
+          docker build --platform linux/amd64 -t offer-recommendation-api ./offer-recommendation-system
 
       - name: Tag and Push to ECR
         env:
