@@ -13,4 +13,5 @@ services:
 
   redis:
     image: redis:7-alpine
-    # No external port needed - only API container accesses Redis internally
+    ports:
+      - "6379:6379"

@@ -1,99 +1,65 @@
 # Two-Stage Offer Recommendation System
 
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Architecture](https://img.shields.io/badge/Architecture-Two--Stage%20(Retrieval%20%2B%20Ranking)-orange)
-![FastAPI](https://img.shields.io/badge/FastAPI-Production-green)
-![LightGBM](https://img.shields.io/badge/Model-LightGBM-blue)
-![AWS](https://img.shields.io/badge/Cloud-AWS%20App%20Runner-orange)
-![MLOps](https://img.shields.io/badge/MLOps-End--to--End-purple)
+A production-grade recommendation engine designed to personalize service offers for 8M+ automotive customers. The system utilizes a two-stage architecture: a retrieval layer for candidate generation and a gradient-boosted ranking layer for precision scoring.
 
-A production-grade **Two-Stage Recommender System** designed to personalize service offers for **8M+ automotive customers** in real-time. The system employs a **Retrieval layer** (Candidate Generation via Clustering) to narrow down the search space, followed by a **Ranking layer** (LightGBM) to score probabilities with high precision.
+## System Architecture
 
-**[Live API Documentation](https://prsmyk6rjm.us-east-1.awsapprunner.com/docs)**
+The architecture decouples retrieval from ranking to maintain sub-100ms latency at scale.
 
----
+### Stage 1: Retrieval (Candidate Generation)
+*   **Objective:** Reduce the search space by identifying a relevant subset of offers for each user.
+*   **Methodology:** K-Means clustering segments customers based on RFM (Recency, Frequency, Monetary) and service history.
+*   **Outcome:** Filters the universe of all possible offers down to the Top-K most probable candidates for each segment.
 
-## System Architecture: The Two-Stage Approach
-
-To handle scale efficiently while maintaining high accuracy, the system splits the recommendation problem into two distinct stages:
-
-### **Stage 1: Retrieval (Candidate Generation)**
-*   **Goal:** Quickly filter the universe of all possible offers down to a relevant subset (Top-K candidates).
-*   **Current Method:** **K-Means Clustering** groups customers into behavioral segments based on RFM (Recency, Frequency, Monetary) and service history.
-*   **Outcome:** Reduces the scoring load on the heavy ranking model by only passing relevant candidates.
-
-### **Stage 2: Fine Ranking**
-*   **Goal:** Accurately predict the probability of redemption for each candidate.
-*   **Method:** A **LightGBM Gradient Boosting** model scores the candidates using complex **Interaction Features** (e.g., `frequency_x_offer_type`, `recency_x_offer_value`).
-*   **Performance:** Achieves **0.83 AUC-ROC** on the hold-out test set.
-
----
+### Stage 2: Fine Ranking
+*   **Objective:** Predict the exact probability of redemption for the retrieved candidates.
+*   **Methodology:** A LightGBM model scores candidates using interaction features (e.g., `frequency_x_offer_type`) to capture user-offer affinity.
+*   **Performance:** Achieves 0.83 AUC-ROC on hold-out validation sets.
 
 ## Key Features
 
-*   **Real-Time Serving:** Deployed as a **FastAPI** microservice with **Redis** caching for feature lookup, achieving sub-100ms latency.
-*   **Automated MLOps:** Full data lifecycle orchestration (ETL -> Feature Engineering -> Training) using **Apache Airflow**.
-*   **Experiment Tracking:** Integrated **MLflow** to track model versions, metrics, and artifacts automatically.
-*   **Advanced Data Engineering:** Implemented **Graph-based Entity Resolution** (using NetworkX) to unify 950k raw records into ~860k unique customer profiles.
-*   **Cloud-Native:** Containerized with **Docker** and deployed to **AWS App Runner** via a custom **GitHub Actions CI/CD** pipeline.
-
----
+*   **Real-Time Serving:** FastAPI microservice with Redis-backed feature caching for low-latency inference.
+*   **Automated MLOps:** End-to-end orchestration (ETL, Feature Engineering, Training) via Apache Airflow.
+*   **Experiment Tracking:** MLflow integration for model versioning, metric tracking, and artifact management.
+*   **Entity Resolution:** Graph-based customer deduplication using NetworkX, unifying 950k raw records into unique profiles.
+*   **Cloud Infrastructure:** Containerized with Docker and deployed to AWS App Runner via GitHub Actions.
 
 ## Tech Stack
 
-*   **Architecture:** Two-Stage Recommender (Retrieval & Ranking)
-*   **Machine Learning:** LightGBM, Scikit-learn (K-Means), Pandas, NumPy
+*   **Modeling:** LightGBM, Scikit-learn, Pandas, NumPy
 *   **API Framework:** FastAPI, Uvicorn
-*   **Data Engineering:** NetworkX (Graph Theory), Apache Airflow
-*   **MLOps:** MLflow, Docker, GitHub Actions
-*   **Infrastructure:** AWS App Runner, AWS ECR, Redis
-
----
+*   **Orchestration:** Apache Airflow, MLflow
+*   **Infrastructure:** Docker, Redis, AWS App Runner
 
 ## Results
 
-*   **Ranking Accuracy:** 0.83 AUC-ROC.
-*   **Business Impact:** Simulated 10x lift in offer conversion rate (from ~3% baseline to ~30%) by targeting high-propensity users.
-*   **Latency:** <100ms p95 latency for real-time inference.
+*   **Model Metric:** 0.83 AUC-ROC.
+*   **Projected Impact:** 10x lift in offer conversion rate based on offline simulation.
+*   **Performance:** <100ms p95 latency for real-time inference.
 
----
+## Setup and Deployment
 
-## Local Setup
-
-1.  **Clone the repository:**
+1.  **Environment Configuration:**
     ```bash
-    git clone https://github.com/yourusername/offer-recommendation-system.git
-    cd offer-recommendation-system
+    conda create -n offer-recommender python=3.9
+    conda activate offer-recommender
+    pip install -r requirements.txt
     ```
 
-2.  **Install dependencies:**
+2.  **Infrastructure:**
     ```bash
-    pip install -r src/requirements.txt
+    docker compose up -d redis
     ```
 
-3.  **Run the API locally:**
+3.  **Local Execution:**
     ```bash
     uvicorn src.main:app --reload
     ```
-    Access the interactive docs at `http://localhost:8000/docs`.
 
-4.  **Run with Docker:**
-    ```bash
-    docker build -t offer-recommender .
-    docker run -p 8000:8000 offer-recommender
-    ```
+## Future Roadmap
 
----
-
-## Future Roadmap: FAISS Retrieval
-
-We are currently planning to upgrade the **Retrieval Stage** (Stage 1) to leverage **Vector Search**:
-
-*   **Objective:** Implement **User-to-User Collaborative Filtering** using **FAISS (Facebook AI Similarity Search)**.
-*   **Method:** Instead of clustering users into fixed segments, we will compute dense embeddings for each user based on their feature vector.
-*   **Outcome:** At inference time, we will query the FAISS index to find the exact K-Nearest Neighbors for the target user and recommend items popular within that specific local neighborhood. This will provide significantly more granular personalization than K-Means.
-
----
+*   **Vector Retrieval:** Transitioning Stage 1 to a Vector Search architecture using FAISS or Milvus.
+*   **Deep Ranking:** Evaluating Neural Collaborative Filtering (NCF) for the ranking stage to capture non-linear feature interactions.
 
 **Author:** Philip Owusu
 **License:** MIT
