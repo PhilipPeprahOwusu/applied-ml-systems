@@ -28,6 +28,7 @@ data/*.parquet
 models/*.lgb
 models/*.pkl
 models/*.txt
+!models/offer_recommender_v2.txt
 
 # Keep JSON configs
 !models/*.json
