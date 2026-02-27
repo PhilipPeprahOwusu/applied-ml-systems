@@ -37,6 +37,34 @@ The architecture decouples retrieval from ranking to maintain sub-100ms latency 
 *   **Projected Impact:** 10x lift in offer conversion rate based on offline simulation.
 *   **Performance:** <100ms p95 latency for real-time inference.
 
+## Live API & Usage
+
+The service is deployed on AWS App Runner and can be queried via the following endpoint:
+
+**Base URL:** `https://prsmyk6rjm.us-east-1.awsapprunner.com`
+
+### Quick Start (API Examples)
+
+To get personalized recommendations for a specific customer, use the `/recommend/{customer_id}` endpoint:
+
+1.  **High-Confidence Recommendation (Loyalty):**
+    ```bash
+    curl -X 'GET' 'https://prsmyk6rjm.us-east-1.awsapprunner.com/recommend/0052PXPOJC'
+    ```
+    *Returns high-scoring loyalty point offers for a "Power User."*
+
+2.  **High-Confidence Recommendation (Discount):**
+    ```bash
+    curl -X 'GET' 'https://prsmyk6rjm.us-east-1.awsapprunner.com/recommend/0023HAQRAD'
+    ```
+    *Returns strong maintenance discounts for a price-sensitive visitor.*
+
+3.  **Personalized Ranking Test:**
+    ```bash
+    curl -X 'GET' 'https://prsmyk6rjm.us-east-1.awsapprunner.com/recommend/0003QF4K5R'
+    ```
+    *Returns a diverse set of ranked offers based on complex behavior interactions.*
+
 ## Setup and Deployment
 
 1.  **Environment Configuration:**
