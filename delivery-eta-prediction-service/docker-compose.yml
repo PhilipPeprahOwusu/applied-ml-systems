@@ -1,0 +1,121 @@
+version: '3.8'
+
+x-airflow-common:
+  &airflow-common
+  image: apache/airflow:2.9.0-python3.9
+  environment:
+    - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
+    - AIRFLOW__CORE__FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlB7JAIBkLIH9Y=
+    - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    - AIRFLOW__CORE__LOGGING_LEVEL=INFO
+    - AIRFLOW__WEBSERVER__SHOW_TRIGGER_FORM_IF_NO_PARAMS=True
+    - _PIP_ADDITIONAL_DEPENDENCIES=feast[redis] xgboost mlflow scikit-learn pandas pyarrow requests
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./pipelines:/opt/airflow/pipelines
+    - ./data:/opt/airflow/data
+    - ./reports:/opt/airflow/reports
+    - ./feature_repo:/opt/airflow/feature_repo
+    - ./requirements.txt:/opt/airflow/requirements.txt
+    - ./mlruns:/app/mlruns
+    - ./mlruns:/opt/airflow/mlruns
+  depends_on:
+    airflow-postgres:
+      condition: service_healthy
+
+services:
+  # --- FEATURE STORE (ONLINE) ---
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  # --- MODEL REGISTRY & TRACKING ---
+  mlflow-server:
+    image: python:3.9-slim
+    container_name: mlflow-server
+    ports:
+      - "5005:5000"
+    command: >
+      bash -c "pip install mlflow psycopg2-binary boto3 && 
+      mlflow server --host 0.0.0.0 --port 5000 
+      --backend-store-uri sqlite:///mlflow.db 
+      --default-artifact-root ./mlruns"
+    volumes:
+      - ./mlruns:/app/mlruns
+    working_dir: /app
+
+  # --- ORCHESTRATION (AIRFLOW) ---
+  airflow-postgres:
+    image: postgres:13
+    container_name: airflow-postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow-init
+    command: version
+    environment:
+      - _AIRFLOW_DB_UPGRADE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    depends_on:
+      airflow-postgres:
+        condition: service_healthy
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: airflow-webserver
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: airflow-scheduler
+    command: scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # --- OBSERVABILITY ---
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./grafana/provisioning/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana/provisioning/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
+      - ./grafana/provisioning/dashboards.yaml:/etc/grafana/provisioning/dashboards/dashboards.yaml
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - prometheus

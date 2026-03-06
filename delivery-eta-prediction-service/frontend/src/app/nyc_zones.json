@@ -1,0 +1,1843 @@
+[
+  {
+    "id": 1,
+    "name": "Newark Airport",
+    "borough": "EWR",
+    "lat": 40.6918,
+    "lng": -74.174
+  },
+  {
+    "id": 2,
+    "name": "Jamaica Bay",
+    "borough": "Queens",
+    "lat": 40.6167,
+    "lng": -73.8313
+  },
+  {
+    "id": 3,
+    "name": "Allerton/Pelham Gardens",
+    "borough": "Bronx",
+    "lat": 40.8645,
+    "lng": -73.8474
+  },
+  {
+    "id": 4,
+    "name": "Alphabet City",
+    "borough": "Manhattan",
+    "lat": 40.7238,
+    "lng": -73.977
+  },
+  {
+    "id": 5,
+    "name": "Arden Heights",
+    "borough": "Staten Island",
+    "lat": 40.5527,
+    "lng": -74.1885
+  },
+  {
+    "id": 6,
+    "name": "Arrochar/Fort Wadsworth",
+    "borough": "Staten Island",
+    "lat": 40.6003,
+    "lng": -74.0718
+  },
+  {
+    "id": 7,
+    "name": "Astoria",
+    "borough": "Queens",
+    "lat": 40.7615,
+    "lng": -73.9197
+  },
+  {
+    "id": 8,
+    "name": "Astoria Park",
+    "borough": "Queens",
+    "lat": 40.7786,
+    "lng": -73.9231
+  },
+  {
+    "id": 9,
+    "name": "Auburndale",
+    "borough": "Queens",
+    "lat": 40.751,
+    "lng": -73.7879
+  },
+  {
+    "id": 10,
+    "name": "Baisley Park",
+    "borough": "Queens",
+    "lat": 40.679,
+    "lng": -73.791
+  },
+  {
+    "id": 11,
+    "name": "Bath Beach",
+    "borough": "Brooklyn",
+    "lat": 40.6043,
+    "lng": -74.0075
+  },
+  {
+    "id": 12,
+    "name": "Battery Park",
+    "borough": "Manhattan",
+    "lat": 40.7029,
+    "lng": -74.0156
+  },
+  {
+    "id": 13,
+    "name": "Battery Park City",
+    "borough": "Manhattan",
+    "lat": 40.712,
+    "lng": -74.0161
+  },
+  {
+    "id": 14,
+    "name": "Bay Ridge",
+    "borough": "Brooklyn",
+    "lat": 40.6248,
+    "lng": -74.0299
+  },
+  {
+    "id": 15,
+    "name": "Bay Terrace/Fort Totten",
+    "borough": "Queens",
+    "lat": 40.7833,
+    "lng": -73.786
+  },
+  {
+    "id": 16,
+    "name": "Bayside",
+    "borough": "Queens",
+    "lat": 40.7627,
+    "lng": -73.7734
+  },
+  {
+    "id": 17,
+    "name": "Bedford",
+    "borough": "Brooklyn",
+    "lat": 40.6915,
+    "lng": -73.9499
+  },
+  {
+    "id": 18,
+    "name": "Bedford Park",
+    "borough": "Bronx",
+    "lat": 40.8677,
+    "lng": -73.8902
+  },
+  {
+    "id": 19,
+    "name": "Bellerose",
+    "borough": "Queens",
+    "lat": 40.7355,
+    "lng": -73.7267
+  },
+  {
+    "id": 20,
+    "name": "Belmont",
+    "borough": "Bronx",
+    "lat": 40.8578,
+    "lng": -73.8859
+  },
+  {
+    "id": 21,
+    "name": "Bensonhurst East",
+    "borough": "Brooklyn",
+    "lat": 40.6014,
+    "lng": -73.9835
+  },
+  {
+    "id": 22,
+    "name": "Bensonhurst West",
+    "borough": "Brooklyn",
+    "lat": 40.6122,
+    "lng": -73.9953
+  },
+  {
+    "id": 23,
+    "name": "Bloomfield/Emerson Hill",
+    "borough": "Staten Island",
+    "lat": 40.6064,
+    "lng": -74.1709
+  },
+  {
+    "id": 24,
+    "name": "Bloomingdale",
+    "borough": "Manhattan",
+    "lat": 40.802,
+    "lng": -73.9655
+  },
+  {
+    "id": 25,
+    "name": "Boerum Hill",
+    "borough": "Brooklyn",
+    "lat": 40.6856,
+    "lng": -73.9861
+  },
+  {
+    "id": 26,
+    "name": "Borough Park",
+    "borough": "Brooklyn",
+    "lat": 40.6309,
+    "lng": -73.9887
+  },
+  {
+    "id": 27,
+    "name": "Breezy Point/Fort Tilden/Riis Beach",
+    "borough": "Queens",
+    "lat": 40.5591,
+    "lng": -73.9069
+  },
+  {
+    "id": 28,
+    "name": "Briarwood/Jamaica Hills",
+    "borough": "Queens",
+    "lat": 40.7116,
+    "lng": -73.8087
+  },
+  {
+    "id": 29,
+    "name": "Brighton Beach",
+    "borough": "Brooklyn",
+    "lat": 40.5809,
+    "lng": -73.9612
+  },
+  {
+    "id": 30,
+    "name": "Broad Channel",
+    "borough": "Queens",
+    "lat": 40.6037,
+    "lng": -73.8219
+  },
+  {
+    "id": 31,
+    "name": "Bronx Park",
+    "borough": "Bronx",
+    "lat": 40.8577,
+    "lng": -73.8755
+  },
+  {
+    "id": 32,
+    "name": "Bronxdale",
+    "borough": "Bronx",
+    "lat": 40.864,
+    "lng": -73.8649
+  },
+  {
+    "id": 33,
+    "name": "Brooklyn Heights",
+    "borough": "Brooklyn",
+    "lat": 40.6958,
+    "lng": -73.9953
+  },
+  {
+    "id": 34,
+    "name": "Brooklyn Navy Yard",
+    "borough": "Brooklyn",
+    "lat": 40.7009,
+    "lng": -73.9712
+  },
+  {
+    "id": 35,
+    "name": "Brownsville",
+    "borough": "Brooklyn",
+    "lat": 40.664,
+    "lng": -73.9103
+  },
+  {
+    "id": 36,
+    "name": "Bushwick North",
+    "borough": "Brooklyn",
+    "lat": 40.7005,
+    "lng": -73.9177
+  },
+  {
+    "id": 37,
+    "name": "Bushwick South",
+    "borough": "Brooklyn",
+    "lat": 40.695,
+    "lng": -73.9222
+  },
+  {
+    "id": 38,
+    "name": "Cambria Heights",
+    "borough": "Queens",
+    "lat": 40.6943,
+    "lng": -73.7356
+  },
+  {
+    "id": 39,
+    "name": "Canarsie",
+    "borough": "Brooklyn",
+    "lat": 40.638,
+    "lng": -73.8997
+  },
+  {
+    "id": 40,
+    "name": "Carroll Gardens",
+    "borough": "Brooklyn",
+    "lat": 40.6792,
+    "lng": -73.996
+  },
+  {
+    "id": 41,
+    "name": "Central Harlem",
+    "borough": "Manhattan",
+    "lat": 40.8043,
+    "lng": -73.9513
+  },
+  {
+    "id": 42,
+    "name": "Central Harlem North",
+    "borough": "Manhattan",
+    "lat": 40.8183,
+    "lng": -73.9408
+  },
+  {
+    "id": 43,
+    "name": "Central Park",
+    "borough": "Manhattan",
+    "lat": 40.7825,
+    "lng": -73.9656
+  },
+  {
+    "id": 44,
+    "name": "Charleston/Tottenville",
+    "borough": "Staten Island",
+    "lat": 40.5255,
+    "lng": -74.2335
+  },
+  {
+    "id": 45,
+    "name": "Chinatown",
+    "borough": "Manhattan",
+    "lat": 40.7125,
+    "lng": -73.9982
+  },
+  {
+    "id": 46,
+    "name": "City Island",
+    "borough": "Bronx",
+    "lat": 40.8491,
+    "lng": -73.782
+  },
+  {
+    "id": 47,
+    "name": "Claremont/Bathgate",
+    "borough": "Bronx",
+    "lat": 40.8427,
+    "lng": -73.9003
+  },
+  {
+    "id": 48,
+    "name": "Clinton East",
+    "borough": "Manhattan",
+    "lat": 40.7623,
+    "lng": -73.9898
+  },
+  {
+    "id": 49,
+    "name": "Clinton Hill",
+    "borough": "Brooklyn",
+    "lat": 40.688,
+    "lng": -73.9624
+  },
+  {
+    "id": 50,
+    "name": "Clinton West",
+    "borough": "Manhattan",
+    "lat": 40.7662,
+    "lng": -73.9951
+  },
+  {
+    "id": 51,
+    "name": "Co-Op City",
+    "borough": "Bronx",
+    "lat": 40.874,
+    "lng": -73.8283
+  },
+  {
+    "id": 52,
+    "name": "Cobble Hill",
+    "borough": "Brooklyn",
+    "lat": 40.6867,
+    "lng": -73.9967
+  },
+  {
+    "id": 53,
+    "name": "College Point",
+    "borough": "Queens",
+    "lat": 40.7809,
+    "lng": -73.8428
+  },
+  {
+    "id": 54,
+    "name": "Columbia Street",
+    "borough": "Brooklyn",
+    "lat": 40.6872,
+    "lng": -74.0029
+  },
+  {
+    "id": 55,
+    "name": "Coney Island",
+    "borough": "Brooklyn",
+    "lat": 40.577,
+    "lng": -73.9879
+  },
+  {
+    "id": 56,
+    "name": "Corona",
+    "borough": "Queens",
+    "lat": 40.7414,
+    "lng": -73.8588
+  },
+  {
+    "id": 57,
+    "name": "Corona",
+    "borough": "Queens",
+    "lat": 40.7518,
+    "lng": -73.8536
+  },
+  {
+    "id": 58,
+    "name": "Country Club",
+    "borough": "Bronx",
+    "lat": 40.8415,
+    "lng": -73.8204
+  },
+  {
+    "id": 59,
+    "name": "Crotona Park",
+    "borough": "Bronx",
+    "lat": 40.8386,
+    "lng": -73.895
+  },
+  {
+    "id": 60,
+    "name": "Crotona Park East",
+    "borough": "Bronx",
+    "lat": 40.834,
+    "lng": -73.8859
+  },
+  {
+    "id": 61,
+    "name": "Crown Heights North",
+    "borough": "Brooklyn",
+    "lat": 40.6745,
+    "lng": -73.9393
+  },
+  {
+    "id": 62,
+    "name": "Crown Heights South",
+    "borough": "Brooklyn",
+    "lat": 40.6665,
+    "lng": -73.9488
+  },
+  {
+    "id": 63,
+    "name": "Cypress Hills",
+    "borough": "Brooklyn",
+    "lat": 40.6838,
+    "lng": -73.8782
+  },
+  {
+    "id": 64,
+    "name": "Douglaston",
+    "borough": "Queens",
+    "lat": 40.7606,
+    "lng": -73.7393
+  },
+  {
+    "id": 65,
+    "name": "Downtown Brooklyn/MetroTech",
+    "borough": "Brooklyn",
+    "lat": 40.6953,
+    "lng": -73.9861
+  },
+  {
+    "id": 66,
+    "name": "DUMBO/Vinegar Hill",
+    "borough": "Brooklyn",
+    "lat": 40.7023,
+    "lng": -73.9857
+  },
+  {
+    "id": 67,
+    "name": "Dyker Heights",
+    "borough": "Brooklyn",
+    "lat": 40.6196,
+    "lng": -74.0138
+  },
+  {
+    "id": 68,
+    "name": "East Chelsea",
+    "borough": "Manhattan",
+    "lat": 40.7484,
+    "lng": -73.9999
+  },
+  {
+    "id": 69,
+    "name": "East Concourse/Concourse Village",
+    "borough": "Bronx",
+    "lat": 40.8314,
+    "lng": -73.915
+  },
+  {
+    "id": 70,
+    "name": "East Elmhurst",
+    "borough": "Queens",
+    "lat": 40.7634,
+    "lng": -73.8684
+  },
+  {
+    "id": 71,
+    "name": "East Flatbush/Farragut",
+    "borough": "Brooklyn",
+    "lat": 40.6443,
+    "lng": -73.938
+  },
+  {
+    "id": 72,
+    "name": "East Flatbush/Remsen Village",
+    "borough": "Brooklyn",
+    "lat": 40.6524,
+    "lng": -73.9223
+  },
+  {
+    "id": 73,
+    "name": "East Flushing",
+    "borough": "Queens",
+    "lat": 40.7541,
+    "lng": -73.8073
+  },
+  {
+    "id": 74,
+    "name": "East Harlem North",
+    "borough": "Manhattan",
+    "lat": 40.8012,
+    "lng": -73.9373
+  },
+  {
+    "id": 75,
+    "name": "East Harlem South",
+    "borough": "Manhattan",
+    "lat": 40.79,
+    "lng": -73.9458
+  },
+  {
+    "id": 76,
+    "name": "East New York",
+    "borough": "Brooklyn",
+    "lat": 40.6609,
+    "lng": -73.8768
+  },
+  {
+    "id": 77,
+    "name": "East New York/Pennsylvania Avenue",
+    "borough": "Brooklyn",
+    "lat": 40.6666,
+    "lng": -73.8954
+  },
+  {
+    "id": 78,
+    "name": "East Tremont",
+    "borough": "Bronx",
+    "lat": 40.845,
+    "lng": -73.8855
+  },
+  {
+    "id": 79,
+    "name": "East Village",
+    "borough": "Manhattan",
+    "lat": 40.7276,
+    "lng": -73.9859
+  },
+  {
+    "id": 80,
+    "name": "East Williamsburg",
+    "borough": "Brooklyn",
+    "lat": 40.7154,
+    "lng": -73.9368
+  },
+  {
+    "id": 81,
+    "name": "Eastchester",
+    "borough": "Bronx",
+    "lat": 40.8809,
+    "lng": -73.8366
+  },
+  {
+    "id": 82,
+    "name": "Elmhurst",
+    "borough": "Queens",
+    "lat": 40.7395,
+    "lng": -73.8771
+  },
+  {
+    "id": 83,
+    "name": "Elmhurst/Maspeth",
+    "borough": "Queens",
+    "lat": 40.7383,
+    "lng": -73.8922
+  },
+  {
+    "id": 84,
+    "name": "Eltingville/Annadale/Prince's Bay",
+    "borough": "Staten Island",
+    "lat": 40.5287,
+    "lng": -74.1877
+  },
+  {
+    "id": 85,
+    "name": "Erasmus",
+    "borough": "Brooklyn",
+    "lat": 40.6461,
+    "lng": -73.9516
+  },
+  {
+    "id": 86,
+    "name": "Far Rockaway",
+    "borough": "Queens",
+    "lat": 40.6024,
+    "lng": -73.7552
+  },
+  {
+    "id": 87,
+    "name": "Financial District North",
+    "borough": "Manhattan",
+    "lat": 40.7068,
+    "lng": -74.0075
+  },
+  {
+    "id": 88,
+    "name": "Financial District South",
+    "borough": "Manhattan",
+    "lat": 40.7034,
+    "lng": -74.0115
+  },
+  {
+    "id": 89,
+    "name": "Flatbush/Ditmas Park",
+    "borough": "Brooklyn",
+    "lat": 40.6379,
+    "lng": -73.961
+  },
+  {
+    "id": 90,
+    "name": "Flatiron",
+    "borough": "Manhattan",
+    "lat": 40.7423,
+    "lng": -73.997
+  },
+  {
+    "id": 91,
+    "name": "Flatlands",
+    "borough": "Brooklyn",
+    "lat": 40.6263,
+    "lng": -73.9301
+  },
+  {
+    "id": 92,
+    "name": "Flushing",
+    "borough": "Queens",
+    "lat": 40.7611,
+    "lng": -73.8289
+  },
+  {
+    "id": 93,
+    "name": "Flushing Meadows-Corona Park",
+    "borough": "Queens",
+    "lat": 40.7407,
+    "lng": -73.8409
+  },
+  {
+    "id": 94,
+    "name": "Fordham South",
+    "borough": "Bronx",
+    "lat": 40.8582,
+    "lng": -73.8995
+  },
+  {
+    "id": 95,
+    "name": "Forest Hills",
+    "borough": "Queens",
+    "lat": 40.7214,
+    "lng": -73.8477
+  },
+  {
+    "id": 96,
+    "name": "Forest Park/Highland Park",
+    "borough": "Queens",
+    "lat": 40.697,
+    "lng": -73.8716
+  },
+  {
+    "id": 97,
+    "name": "Fort Greene",
+    "borough": "Brooklyn",
+    "lat": 40.6908,
+    "lng": -73.9749
+  },
+  {
+    "id": 98,
+    "name": "Fresh Meadows",
+    "borough": "Queens",
+    "lat": 40.7345,
+    "lng": -73.7773
+  },
+  {
+    "id": 99,
+    "name": "Freshkills Park",
+    "borough": "Staten Island",
+    "lat": 40.5768,
+    "lng": -74.1864
+  },
+  {
+    "id": 100,
+    "name": "Garment District",
+    "borough": "Manhattan",
+    "lat": 40.7535,
+    "lng": -73.9888
+  },
+  {
+    "id": 101,
+    "name": "Glen Oaks",
+    "borough": "Queens",
+    "lat": 40.746,
+    "lng": -73.711
+  },
+  {
+    "id": 102,
+    "name": "Glendale",
+    "borough": "Queens",
+    "lat": 40.7035,
+    "lng": -73.8757
+  },
+  {
+    "id": 103,
+    "name": "Governor's Island/Ellis Island/Liberty Island",
+    "borough": "Manhattan",
+    "lat": 40.6899,
+    "lng": -74.0453
+  },
+  {
+    "id": 104,
+    "name": "Governor's Island/Ellis Island/Liberty Island",
+    "borough": "Manhattan",
+    "lat": 40.6988,
+    "lng": -74.0408
+  },
+  {
+    "id": 105,
+    "name": "Governor's Island/Ellis Island/Liberty Island",
+    "borough": "Manhattan",
+    "lat": 40.6888,
+    "lng": -74.0191
+  },
+  {
+    "id": 106,
+    "name": "Gowanus",
+    "borough": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9906
+  },
+  {
+    "id": 107,
+    "name": "Gramercy",
+    "borough": "Manhattan",
+    "lat": 40.7368,
+    "lng": -73.9841
+  },
+  {
+    "id": 108,
+    "name": "Gravesend",
+    "borough": "Brooklyn",
+    "lat": 40.5884,
+    "lng": -73.9814
+  },
+  {
+    "id": 109,
+    "name": "Great Kills",
+    "borough": "Staten Island",
+    "lat": 40.5519,
+    "lng": -74.1509
+  },
+  {
+    "id": 110,
+    "name": "Great Kills Park",
+    "borough": "Staten Island",
+    "lat": 40.5458,
+    "lng": -74.1283
+  },
+  {
+    "id": 111,
+    "name": "Green-Wood Cemetery",
+    "borough": "Brooklyn",
+    "lat": 40.6521,
+    "lng": -73.9902
+  },
+  {
+    "id": 112,
+    "name": "Greenpoint",
+    "borough": "Brooklyn",
+    "lat": 40.7295,
+    "lng": -73.9495
+  },
+  {
+    "id": 113,
+    "name": "Greenwich Village North",
+    "borough": "Manhattan",
+    "lat": 40.7326,
+    "lng": -73.9943
+  },
+  {
+    "id": 114,
+    "name": "Greenwich Village South",
+    "borough": "Manhattan",
+    "lat": 40.7283,
+    "lng": -73.9974
+  },
+  {
+    "id": 115,
+    "name": "Grymes Hill/Clifton",
+    "borough": "Staten Island",
+    "lat": 40.618,
+    "lng": -74.0878
+  },
+  {
+    "id": 116,
+    "name": "Hamilton Heights",
+    "borough": "Manhattan",
+    "lat": 40.827,
+    "lng": -73.9485
+  },
+  {
+    "id": 117,
+    "name": "Hammels/Arverne",
+    "borough": "Queens",
+    "lat": 40.5941,
+    "lng": -73.7896
+  },
+  {
+    "id": 118,
+    "name": "Heartland Village/Todt Hill",
+    "borough": "Staten Island",
+    "lat": 40.5866,
+    "lng": -74.133
+  },
+  {
+    "id": 119,
+    "name": "Highbridge",
+    "borough": "Bronx",
+    "lat": 40.8378,
+    "lng": -73.9262
+  },
+  {
+    "id": 120,
+    "name": "Highbridge Park",
+    "borough": "Manhattan",
+    "lat": 40.8467,
+    "lng": -73.9302
+  },
+  {
+    "id": 121,
+    "name": "Hillcrest/Pomonok",
+    "borough": "Queens",
+    "lat": 40.7283,
+    "lng": -73.8024
+  },
+  {
+    "id": 122,
+    "name": "Hollis",
+    "borough": "Queens",
+    "lat": 40.7106,
+    "lng": -73.7611
+  },
+  {
+    "id": 123,
+    "name": "Homecrest",
+    "borough": "Brooklyn",
+    "lat": 40.6,
+    "lng": -73.9643
+  },
+  {
+    "id": 124,
+    "name": "Howard Beach",
+    "borough": "Queens",
+    "lat": 40.6582,
+    "lng": -73.8449
+  },
+  {
+    "id": 125,
+    "name": "Hudson Sq",
+    "borough": "Manhattan",
+    "lat": 40.7263,
+    "lng": -74.0075
+  },
+  {
+    "id": 126,
+    "name": "Hunts Point",
+    "borough": "Bronx",
+    "lat": 40.8121,
+    "lng": -73.8855
+  },
+  {
+    "id": 127,
+    "name": "Inwood",
+    "borough": "Manhattan",
+    "lat": 40.8661,
+    "lng": -73.9193
+  },
+  {
+    "id": 128,
+    "name": "Inwood Hill Park",
+    "borough": "Manhattan",
+    "lat": 40.8724,
+    "lng": -73.9244
+  },
+  {
+    "id": 129,
+    "name": "Jackson Heights",
+    "borough": "Queens",
+    "lat": 40.7573,
+    "lng": -73.8853
+  },
+  {
+    "id": 130,
+    "name": "Jamaica",
+    "borough": "Queens",
+    "lat": 40.7044,
+    "lng": -73.794
+  },
+  {
+    "id": 131,
+    "name": "Jamaica Estates",
+    "borough": "Queens",
+    "lat": 40.7207,
+    "lng": -73.7761
+  },
+  {
+    "id": 132,
+    "name": "JFK Airport",
+    "borough": "Queens",
+    "lat": 40.647,
+    "lng": -73.7865
+  },
+  {
+    "id": 133,
+    "name": "Kensington",
+    "borough": "Brooklyn",
+    "lat": 40.6406,
+    "lng": -73.9762
+  },
+  {
+    "id": 134,
+    "name": "Kew Gardens",
+    "borough": "Queens",
+    "lat": 40.7081,
+    "lng": -73.8287
+  },
+  {
+    "id": 135,
+    "name": "Kew Gardens Hills",
+    "borough": "Queens",
+    "lat": 40.7284,
+    "lng": -73.8212
+  },
+  {
+    "id": 136,
+    "name": "Kingsbridge Heights",
+    "borough": "Bronx",
+    "lat": 40.8653,
+    "lng": -73.9059
+  },
+  {
+    "id": 137,
+    "name": "Kips Bay",
+    "borough": "Manhattan",
+    "lat": 40.7404,
+    "lng": -73.9765
+  },
+  {
+    "id": 138,
+    "name": "LaGuardia Airport",
+    "borough": "Queens",
+    "lat": 40.7744,
+    "lng": -73.8736
+  },
+  {
+    "id": 139,
+    "name": "Laurelton",
+    "borough": "Queens",
+    "lat": 40.6771,
+    "lng": -73.7442
+  },
+  {
+    "id": 140,
+    "name": "Lenox Hill East",
+    "borough": "Manhattan",
+    "lat": 40.7655,
+    "lng": -73.9547
+  },
+  {
+    "id": 141,
+    "name": "Lenox Hill West",
+    "borough": "Manhattan",
+    "lat": 40.7669,
+    "lng": -73.9596
+  },
+  {
+    "id": 142,
+    "name": "Lincoln Square East",
+    "borough": "Manhattan",
+    "lat": 40.7736,
+    "lng": -73.9815
+  },
+  {
+    "id": 143,
+    "name": "Lincoln Square West",
+    "borough": "Manhattan",
+    "lat": 40.776,
+    "lng": -73.9876
+  },
+  {
+    "id": 144,
+    "name": "Little Italy/NoLiTa",
+    "borough": "Manhattan",
+    "lat": 40.7209,
+    "lng": -73.9969
+  },
+  {
+    "id": 145,
+    "name": "Long Island City/Hunters Point",
+    "borough": "Queens",
+    "lat": 40.7454,
+    "lng": -73.9489
+  },
+  {
+    "id": 146,
+    "name": "Long Island City/Queens Plaza",
+    "borough": "Queens",
+    "lat": 40.7542,
+    "lng": -73.9348
+  },
+  {
+    "id": 147,
+    "name": "Longwood",
+    "borough": "Bronx",
+    "lat": 40.8197,
+    "lng": -73.899
+  },
+  {
+    "id": 148,
+    "name": "Lower East Side",
+    "borough": "Manhattan",
+    "lat": 40.7189,
+    "lng": -73.9909
+  },
+  {
+    "id": 149,
+    "name": "Madison",
+    "borough": "Brooklyn",
+    "lat": 40.6049,
+    "lng": -73.9481
+  },
+  {
+    "id": 150,
+    "name": "Manhattan Beach",
+    "borough": "Brooklyn",
+    "lat": 40.5805,
+    "lng": -73.9436
+  },
+  {
+    "id": 151,
+    "name": "Manhattan Valley",
+    "borough": "Manhattan",
+    "lat": 40.798,
+    "lng": -73.9682
+  },
+  {
+    "id": 152,
+    "name": "Manhattanville",
+    "borough": "Manhattan",
+    "lat": 40.818,
+    "lng": -73.9538
+  },
+  {
+    "id": 153,
+    "name": "Marble Hill",
+    "borough": "Manhattan",
+    "lat": 40.876,
+    "lng": -73.9104
+  },
+  {
+    "id": 154,
+    "name": "Marine Park/Floyd Bennett Field",
+    "borough": "Brooklyn",
+    "lat": 40.5936,
+    "lng": -73.9026
+  },
+  {
+    "id": 155,
+    "name": "Marine Park/Mill Basin",
+    "borough": "Brooklyn",
+    "lat": 40.6146,
+    "lng": -73.9153
+  },
+  {
+    "id": 156,
+    "name": "Mariners Harbor",
+    "borough": "Staten Island",
+    "lat": 40.6313,
+    "lng": -74.1672
+  },
+  {
+    "id": 157,
+    "name": "Maspeth",
+    "borough": "Queens",
+    "lat": 40.724,
+    "lng": -73.9023
+  },
+  {
+    "id": 158,
+    "name": "Meatpacking/West Village West",
+    "borough": "Manhattan",
+    "lat": 40.735,
+    "lng": -74.009
+  },
+  {
+    "id": 159,
+    "name": "Melrose South",
+    "borough": "Bronx",
+    "lat": 40.8183,
+    "lng": -73.9128
+  },
+  {
+    "id": 160,
+    "name": "Middle Village",
+    "borough": "Queens",
+    "lat": 40.7183,
+    "lng": -73.8801
+  },
+  {
+    "id": 161,
+    "name": "Midtown Center",
+    "borough": "Manhattan",
+    "lat": 40.758,
+    "lng": -73.9777
+  },
+  {
+    "id": 162,
+    "name": "Midtown East",
+    "borough": "Manhattan",
+    "lat": 40.7567,
+    "lng": -73.9724
+  },
+  {
+    "id": 163,
+    "name": "Midtown North",
+    "borough": "Manhattan",
+    "lat": 40.7644,
+    "lng": -73.9776
+  },
+  {
+    "id": 164,
+    "name": "Midtown South",
+    "borough": "Manhattan",
+    "lat": 40.7486,
+    "lng": -73.9852
+  },
+  {
+    "id": 165,
+    "name": "Midwood",
+    "borough": "Brooklyn",
+    "lat": 40.6209,
+    "lng": -73.9568
+  },
+  {
+    "id": 166,
+    "name": "Morningside Heights",
+    "borough": "Manhattan",
+    "lat": 40.8095,
+    "lng": -73.9618
+  },
+  {
+    "id": 167,
+    "name": "Morrisania/Melrose",
+    "borough": "Bronx",
+    "lat": 40.8275,
+    "lng": -73.9024
+  },
+  {
+    "id": 168,
+    "name": "Mott Haven/Port Morris",
+    "borough": "Bronx",
+    "lat": 40.8073,
+    "lng": -73.9168
+  },
+  {
+    "id": 169,
+    "name": "Mount Hope",
+    "borough": "Bronx",
+    "lat": 40.8491,
+    "lng": -73.9051
+  },
+  {
+    "id": 170,
+    "name": "Murray Hill",
+    "borough": "Manhattan",
+    "lat": 40.7477,
+    "lng": -73.9785
+  },
+  {
+    "id": 171,
+    "name": "Murray Hill-Queens",
+    "borough": "Queens",
+    "lat": 40.7684,
+    "lng": -73.8095
+  },
+  {
+    "id": 172,
+    "name": "New Dorp/Midland Beach",
+    "borough": "Staten Island",
+    "lat": 40.5718,
+    "lng": -74.105
+  },
+  {
+    "id": 173,
+    "name": "North Corona",
+    "borough": "Queens",
+    "lat": 40.7526,
+    "lng": -73.863
+  },
+  {
+    "id": 174,
+    "name": "Norwood",
+    "borough": "Bronx",
+    "lat": 40.8771,
+    "lng": -73.879
+  },
+  {
+    "id": 175,
+    "name": "Oakland Gardens",
+    "borough": "Queens",
+    "lat": 40.7427,
+    "lng": -73.7546
+  },
+  {
+    "id": 176,
+    "name": "Oakwood",
+    "borough": "Staten Island",
+    "lat": 40.562,
+    "lng": -74.1226
+  },
+  {
+    "id": 177,
+    "name": "Ocean Hill",
+    "borough": "Brooklyn",
+    "lat": 40.6766,
+    "lng": -73.9136
+  },
+  {
+    "id": 178,
+    "name": "Ocean Parkway South",
+    "borough": "Brooklyn",
+    "lat": 40.6173,
+    "lng": -73.9703
+  },
+  {
+    "id": 179,
+    "name": "Old Astoria",
+    "borough": "Queens",
+    "lat": 40.7716,
+    "lng": -73.9283
+  },
+  {
+    "id": 180,
+    "name": "Ozone Park",
+    "borough": "Queens",
+    "lat": 40.6756,
+    "lng": -73.847
+  },
+  {
+    "id": 181,
+    "name": "Park Slope",
+    "borough": "Brooklyn",
+    "lat": 40.6704,
+    "lng": -73.9814
+  },
+  {
+    "id": 182,
+    "name": "Parkchester",
+    "borough": "Bronx",
+    "lat": 40.8377,
+    "lng": -73.858
+  },
+  {
+    "id": 183,
+    "name": "Pelham Bay",
+    "borough": "Bronx",
+    "lat": 40.8492,
+    "lng": -73.8316
+  },
+  {
+    "id": 184,
+    "name": "Pelham Bay Park",
+    "borough": "Bronx",
+    "lat": 40.8683,
+    "lng": -73.8079
+  },
+  {
+    "id": 185,
+    "name": "Pelham Parkway",
+    "borough": "Bronx",
+    "lat": 40.8544,
+    "lng": -73.8544
+  },
+  {
+    "id": 186,
+    "name": "Penn Station/Madison Sq West",
+    "borough": "Manhattan",
+    "lat": 40.7485,
+    "lng": -73.9924
+  },
+  {
+    "id": 187,
+    "name": "Port Richmond",
+    "borough": "Staten Island",
+    "lat": 40.6282,
+    "lng": -74.1408
+  },
+  {
+    "id": 188,
+    "name": "Prospect-Lefferts Gardens",
+    "borough": "Brooklyn",
+    "lat": 40.6587,
+    "lng": -73.9474
+  },
+  {
+    "id": 189,
+    "name": "Prospect Heights",
+    "borough": "Brooklyn",
+    "lat": 40.6776,
+    "lng": -73.9676
+  },
+  {
+    "id": 190,
+    "name": "Prospect Park",
+    "borough": "Brooklyn",
+    "lat": 40.6616,
+    "lng": -73.9689
+  },
+  {
+    "id": 191,
+    "name": "Queens Village",
+    "borough": "Queens",
+    "lat": 40.7155,
+    "lng": -73.7415
+  },
+  {
+    "id": 192,
+    "name": "Queensboro Hill",
+    "borough": "Queens",
+    "lat": 40.7438,
+    "lng": -73.8152
+  },
+  {
+    "id": 193,
+    "name": "Queensbridge/Ravenswood",
+    "borough": "Queens",
+    "lat": 40.7603,
+    "lng": -73.942
+  },
+  {
+    "id": 194,
+    "name": "Randalls Island",
+    "borough": "Manhattan",
+    "lat": 40.791,
+    "lng": -73.9246
+  },
+  {
+    "id": 195,
+    "name": "Red Hook",
+    "borough": "Brooklyn",
+    "lat": 40.6755,
+    "lng": -74.0092
+  },
+  {
+    "id": 196,
+    "name": "Rego Park",
+    "borough": "Queens",
+    "lat": 40.7262,
+    "lng": -73.8633
+  },
+  {
+    "id": 197,
+    "name": "Richmond Hill",
+    "borough": "Queens",
+    "lat": 40.6945,
+    "lng": -73.8309
+  },
+  {
+    "id": 198,
+    "name": "Ridgewood",
+    "borough": "Queens",
+    "lat": 40.7065,
+    "lng": -73.9017
+  },
+  {
+    "id": 199,
+    "name": "Rikers Island",
+    "borough": "Bronx",
+    "lat": 40.7911,
+    "lng": -73.8827
+  },
+  {
+    "id": 200,
+    "name": "Riverdale/North Riverdale/Fieldston",
+    "borough": "Bronx",
+    "lat": 40.8995,
+    "lng": -73.907
+  },
+  {
+    "id": 201,
+    "name": "Rockaway Park",
+    "borough": "Queens",
+    "lat": 40.578,
+    "lng": -73.8435
+  },
+  {
+    "id": 202,
+    "name": "Roosevelt Island",
+    "borough": "Manhattan",
+    "lat": 40.7619,
+    "lng": -73.95
+  },
+  {
+    "id": 203,
+    "name": "Rosedale",
+    "borough": "Queens",
+    "lat": 40.6579,
+    "lng": -73.7395
+  },
+  {
+    "id": 204,
+    "name": "Rossville/Woodrow",
+    "borough": "Staten Island",
+    "lat": 40.5403,
+    "lng": -74.2078
+  },
+  {
+    "id": 205,
+    "name": "Saint Albans",
+    "borough": "Queens",
+    "lat": 40.6912,
+    "lng": -73.7631
+  },
+  {
+    "id": 206,
+    "name": "Saint George/New Brighton",
+    "borough": "Staten Island",
+    "lat": 40.639,
+    "lng": -74.1023
+  },
+  {
+    "id": 207,
+    "name": "Saint Michaels Cemetery/Woodside",
+    "borough": "Queens",
+    "lat": 40.764,
+    "lng": -73.8994
+  },
+  {
+    "id": 208,
+    "name": "Schuylerville/Edgewater Park",
+    "borough": "Bronx",
+    "lat": 40.8233,
+    "lng": -73.8235
+  },
+  {
+    "id": 209,
+    "name": "Seaport",
+    "borough": "Manhattan",
+    "lat": 40.7091,
+    "lng": -74.0037
+  },
+  {
+    "id": 210,
+    "name": "Sheepshead Bay",
+    "borough": "Brooklyn",
+    "lat": 40.592,
+    "lng": -73.9405
+  },
+  {
+    "id": 211,
+    "name": "SoHo",
+    "borough": "Manhattan",
+    "lat": 40.7239,
+    "lng": -74.0015
+  },
+  {
+    "id": 212,
+    "name": "Soundview/Bruckner",
+    "borough": "Bronx",
+    "lat": 40.8279,
+    "lng": -73.8697
+  },
+  {
+    "id": 213,
+    "name": "Soundview/Castle Hill",
+    "borough": "Bronx",
+    "lat": 40.8179,
+    "lng": -73.8581
+  },
+  {
+    "id": 214,
+    "name": "South Beach/Dongan Hills",
+    "borough": "Staten Island",
+    "lat": 40.5868,
+    "lng": -74.0855
+  },
+  {
+    "id": 215,
+    "name": "South Jamaica",
+    "borough": "Queens",
+    "lat": 40.6944,
+    "lng": -73.791
+  },
+  {
+    "id": 216,
+    "name": "South Ozone Park",
+    "borough": "Queens",
+    "lat": 40.6762,
+    "lng": -73.8195
+  },
+  {
+    "id": 217,
+    "name": "South Williamsburg",
+    "borough": "Brooklyn",
+    "lat": 40.7039,
+    "lng": -73.9586
+  },
+  {
+    "id": 218,
+    "name": "Springfield Gardens North",
+    "borough": "Queens",
+    "lat": 40.6721,
+    "lng": -73.773
+  },
+  {
+    "id": 219,
+    "name": "Springfield Gardens South",
+    "borough": "Queens",
+    "lat": 40.6622,
+    "lng": -73.7645
+  },
+  {
+    "id": 220,
+    "name": "Spuyten Duyvil/Kingsbridge",
+    "borough": "Bronx",
+    "lat": 40.8824,
+    "lng": -73.9107
+  },
+  {
+    "id": 221,
+    "name": "Stapleton",
+    "borough": "Staten Island",
+    "lat": 40.6188,
+    "lng": -74.0737
+  },
+  {
+    "id": 222,
+    "name": "Starrett City",
+    "borough": "Brooklyn",
+    "lat": 40.6475,
+    "lng": -73.8824
+  },
+  {
+    "id": 223,
+    "name": "Steinway",
+    "borough": "Queens",
+    "lat": 40.7774,
+    "lng": -73.9054
+  },
+  {
+    "id": 224,
+    "name": "Stuy Town/Peter Cooper Village",
+    "borough": "Manhattan",
+    "lat": 40.7318,
+    "lng": -73.9766
+  },
+  {
+    "id": 225,
+    "name": "Stuyvesant Heights",
+    "borough": "Brooklyn",
+    "lat": 40.6882,
+    "lng": -73.9319
+  },
+  {
+    "id": 226,
+    "name": "Sunnyside",
+    "borough": "Queens",
+    "lat": 40.7377,
+    "lng": -73.9247
+  },
+  {
+    "id": 227,
+    "name": "Sunset Park East",
+    "borough": "Brooklyn",
+    "lat": 40.6419,
+    "lng": -74.0047
+  },
+  {
+    "id": 228,
+    "name": "Sunset Park West",
+    "borough": "Brooklyn",
+    "lat": 40.6524,
+    "lng": -74.0113
+  },
+  {
+    "id": 229,
+    "name": "Sutton Place/Turtle Bay North",
+    "borough": "Manhattan",
+    "lat": 40.7567,
+    "lng": -73.9651
+  },
+  {
+    "id": 230,
+    "name": "Times Sq/Theatre District",
+    "borough": "Manhattan",
+    "lat": 40.7598,
+    "lng": -73.9842
+  },
+  {
+    "id": 231,
+    "name": "TriBeCa/Civic Center",
+    "borough": "Manhattan",
+    "lat": 40.7178,
+    "lng": -74.0079
+  },
+  {
+    "id": 232,
+    "name": "Two Bridges/Seward Park",
+    "borough": "Manhattan",
+    "lat": 40.7147,
+    "lng": -73.983
+  },
+  {
+    "id": 233,
+    "name": "UN/Turtle Bay South",
+    "borough": "Manhattan",
+    "lat": 40.7499,
+    "lng": -73.9704
+  },
+  {
+    "id": 234,
+    "name": "Union Sq",
+    "borough": "Manhattan",
+    "lat": 40.7403,
+    "lng": -73.9905
+  },
+  {
+    "id": 235,
+    "name": "University Heights/Morris Heights",
+    "borough": "Bronx",
+    "lat": 40.8525,
+    "lng": -73.916
+  },
+  {
+    "id": 236,
+    "name": "Upper East Side North",
+    "borough": "Manhattan",
+    "lat": 40.7804,
+    "lng": -73.957
+  },
+  {
+    "id": 237,
+    "name": "Upper East Side South",
+    "borough": "Manhattan",
+    "lat": 40.7686,
+    "lng": -73.9656
+  },
+  {
+    "id": 238,
+    "name": "Upper West Side North",
+    "borough": "Manhattan",
+    "lat": 40.7917,
+    "lng": -73.973
+  },
+  {
+    "id": 239,
+    "name": "Upper West Side South",
+    "borough": "Manhattan",
+    "lat": 40.784,
+    "lng": -73.9786
+  },
+  {
+    "id": 240,
+    "name": "Van Cortlandt Park",
+    "borough": "Bronx",
+    "lat": 40.8946,
+    "lng": -73.882
+  },
+  {
+    "id": 241,
+    "name": "Van Cortlandt Village",
+    "borough": "Bronx",
+    "lat": 40.8765,
+    "lng": -73.8956
+  },
+  {
+    "id": 242,
+    "name": "Van Nest/Morris Park",
+    "borough": "Bronx",
+    "lat": 40.8468,
+    "lng": -73.8507
+  },
+  {
+    "id": 243,
+    "name": "Washington Heights North",
+    "borough": "Manhattan",
+    "lat": 40.8571,
+    "lng": -73.9328
+  },
+  {
+    "id": 244,
+    "name": "Washington Heights South",
+    "borough": "Manhattan",
+    "lat": 40.8417,
+    "lng": -73.9414
+  },
+  {
+    "id": 245,
+    "name": "West Brighton",
+    "borough": "Staten Island",
+    "lat": 40.63,
+    "lng": -74.1029
+  },
+  {
+    "id": 246,
+    "name": "West Chelsea/Hudson Yards",
+    "borough": "Manhattan",
+    "lat": 40.7533,
+    "lng": -74.004
+  },
+  {
+    "id": 247,
+    "name": "West Concourse",
+    "borough": "Bronx",
+    "lat": 40.829,
+    "lng": -73.9244
+  },
+  {
+    "id": 248,
+    "name": "West Farms/Bronx River",
+    "borough": "Bronx",
+    "lat": 40.8342,
+    "lng": -73.8723
+  },
+  {
+    "id": 249,
+    "name": "West Village",
+    "borough": "Manhattan",
+    "lat": 40.7346,
+    "lng": -74.0029
+  },
+  {
+    "id": 250,
+    "name": "Westchester Village/Unionport",
+    "borough": "Bronx",
+    "lat": 40.8321,
+    "lng": -73.8486
+  },
+  {
+    "id": 251,
+    "name": "Westerleigh",
+    "borough": "Staten Island",
+    "lat": 40.6169,
+    "lng": -74.1253
+  },
+  {
+    "id": 252,
+    "name": "Whitestone",
+    "borough": "Queens",
+    "lat": 40.7882,
+    "lng": -73.8157
+  },
+  {
+    "id": 253,
+    "name": "Willets Point",
+    "borough": "Queens",
+    "lat": 40.7606,
+    "lng": -73.8412
+  },
+  {
+    "id": 254,
+    "name": "Williamsbridge/Olinville",
+    "borough": "Bronx",
+    "lat": 40.8822,
+    "lng": -73.8589
+  },
+  {
+    "id": 255,
+    "name": "Williamsburg (North Side)",
+    "borough": "Brooklyn",
+    "lat": 40.7188,
+    "lng": -73.9574
+  },
+  {
+    "id": 256,
+    "name": "Williamsburg (South Side)",
+    "borough": "Brooklyn",
+    "lat": 40.7109,
+    "lng": -73.9599
+  },
+  {
+    "id": 257,
+    "name": "Windsor Terrace",
+    "borough": "Brooklyn",
+    "lat": 40.6536,
+    "lng": -73.978
+  },
+  {
+    "id": 258,
+    "name": "Woodhaven",
+    "borough": "Queens",
+    "lat": 40.6887,
+    "lng": -73.8558
+  },
+  {
+    "id": 259,
+    "name": "Woodlawn/Wakefield",
+    "borough": "Bronx",
+    "lat": 40.8979,
+    "lng": -73.8522
+  },
+  {
+    "id": 260,
+    "name": "Woodside",
+    "borough": "Queens",
+    "lat": 40.7442,
+    "lng": -73.9063
+  },
+  {
+    "id": 261,
+    "name": "World Trade Center",
+    "borough": "Manhattan",
+    "lat": 40.7091,
+    "lng": -74.013
+  },
+  {
+    "id": 262,
+    "name": "Yorkville East",
+    "borough": "Manhattan",
+    "lat": 40.7759,
+    "lng": -73.9465
+  },
+  {
+    "id": 263,
+    "name": "Yorkville West",
+    "borough": "Manhattan",
+    "lat": 40.7788,
+    "lng": -73.951
+  }
+]
