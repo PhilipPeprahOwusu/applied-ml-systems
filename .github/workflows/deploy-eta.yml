@@ -1,14 +1,17 @@
-name: Deploy to AWS
+name: Deploy ETA Service to AWS
 
 on:
   push:
     branches: [main]
     paths:
-      - "offer-recommendation-system/**"
+      - 'delivery-eta-prediction-service/**'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./delivery-eta-prediction-service
 
     steps:
       - name: Checkout code
@@ -27,17 +30,17 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build --platform linux/amd64 -t offer-recommendation-api ./offer-recommendation-system
+          docker build --platform linux/amd64 -t delivery-eta-api -f k8s/Dockerfile .
 
       - name: Tag and Push to ECR
         env:
-          ECR_REGISTRY: 420660210456.dkr.ecr.us-east-1.amazonaws.com
-          IMAGE_NAME: offer-recommendation-api
+          ECR_REGISTRY: 420660210456.dkr.ecr.us-east-1.amazonaws.com # Replace if different
+          IMAGE_NAME: delivery-eta-api
         run: |
           docker tag $IMAGE_NAME:latest $ECR_REGISTRY/$IMAGE_NAME:latest
           docker push $ECR_REGISTRY/$IMAGE_NAME:latest
 
-      - name: Deploy to App Runner
+      - name: Deploy to App Runner or EKS
         run: |
-          aws apprunner start-deployment \
-            --service-arn arn:aws:apprunner:us-east-1:420660210456:service/offer-recommendation-api/dabd23fc9f6747c6850c463541f3a2c7
+          echo "Please configure the exact App Runner Service ARN or EKS kubectl apply commands here."
+          # aws apprunner start-deployment --service-arn arn:aws:apprunner:us-east-1:...
