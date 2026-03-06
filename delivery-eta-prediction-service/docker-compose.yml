@@ -2,11 +2,13 @@ version: '3.8'
 
 x-airflow-common:
   &airflow-common
-  image: apache/airflow:2.9.0-python3.9
+  build:
+    context: .
+    dockerfile: Dockerfile.airflow
   environment:
     - AIRFLOW__CORE__EXECUTOR=LocalExecutor
     - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
-    - AIRFLOW__CORE__FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlB7JAIBkLIH9Y=
+    - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY:-46BKJoQYlPPOexq0OhDZnIlB7JAIBkLIH9Y=}
     - AIRFLOW__CORE__LOAD_EXAMPLES=False
     - AIRFLOW__CORE__LOGGING_LEVEL=INFO
     - AIRFLOW__WEBSERVER__SHOW_TRIGGER_FORM_IF_NO_PARAMS=True
