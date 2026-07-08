@@ -12,12 +12,15 @@ from prometheus_client import make_asgi_app, Counter, Histogram
 app = FastAPI(title="NYC Trip Estimation Service")
 
 # --- CORS Configuration for React Frontend ---
+# Get allowed origins from environment variable, default to localhost for development
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3001,http://localhost:3000").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, change this to your exact React domain
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 store = FeatureStore(repo_path="feature_repo")
@@ -45,20 +48,33 @@ async def monitor_requests(request: Request, call_next):
     return response
 # --------------------------------
 
-# Load model using MLflow Model Registry
+# Load model using local directory fallback for AWS/Production
 MODEL_NAME = "delivery-eta-version-2"
+LOCAL_MODEL_PATH = "model"
 model = None
 
 @app.on_event("startup")
 def load_model():
     global model
+    
+    # Try loading from local directory first (Production/AWS mode)
+    if os.path.exists(LOCAL_MODEL_PATH) and os.path.listdir(LOCAL_MODEL_PATH):
+        try:
+            print(f"Loading model from local directory: {LOCAL_MODEL_PATH}")
+            model = mlflow.sklearn.load_model(LOCAL_MODEL_PATH)
+            print("Model loaded successfully from local disk")
+            return
+        except Exception as e:
+            print(f"Local model load failed: {e}. Falling back to Registry...")
+
+    # Fallback to MLflow Registry (Development mode)
     try:
         client = mlflow.tracking.MlflowClient()
         latest_version_info = client.get_latest_versions(MODEL_NAME, stages=["None"])[0]
         model_uri = f"models:/{MODEL_NAME}/{latest_version_info.version}"
         print(f"Loading model from Registry: {model_uri}")
         model = mlflow.sklearn.load_model(model_uri)
-        print("Model loaded successfully!")
+        print("Model loaded successfully from Registry!")
     except Exception as e:
         print(f"Warning: Could not load model from registry. Error: {e}")
         model = None
